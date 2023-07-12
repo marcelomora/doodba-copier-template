@@ -40,10 +40,6 @@ _skip_if_exists:
   - odoo/custom/src/repos.yaml
   - odoo/custom/ssh/*
 
-_tasks:
-  - invoke after-update
-  - invoke develop
-
 _migrations:
   - version: v0.0.1
     after:
@@ -175,7 +171,7 @@ project_author:
     Tell me who you are.
 
     If private modules do not include this author, pylint will warn you.
-  default: Tecnativa
+  default: Accioma
 
 project_name:
   type: str
